@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR');
+body {
+  background-color: #a0729e;#280B29
+	background: radial-gradient(ellipse at center, rgba(49,16,47,1) 0%, rgba(40,11,41,1) 100%);
+	overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  text-align: center;
+}
+
+.autoplay{
+	z-index:-999;
+	display:none;
+}
+
+/*---------.image{
+	background-image:url(/images/HHHHHHHHNN1WNewcomerWhoruSitDogHHHHHHHH.jpg);
+	background-repeat:no-repeat; 
+	background-size: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 50%;
+	min-height: 50%;
+	height: auto;
+	width: auto;
+	z-index:-12;
+	opacity: 0;
+    display: block;
+}
+
+----------*/
+img {
+opacity: 0;
+left: 0%;
+width: 50%;
+height: 50%;
+position:absolute;
+padding-bottom: 50%;
+z-index:5;
+
+
+}
+
+
+.container {
+  max-width: 50px;
+  margin: 100;
+   z-index:50;
+   overflow: hidden;
+   opacity: 0;
+}
+
+.signature {
+  position: relative;
+  overflow: auto;
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%; 
+   z-index:50;
+   overflow: hidden;
+}
+.signature png {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+   z-index:5;
+   overflow: hidden;
+}
+
+
+#stars {
+	position: fixed;
+	display: block;
+	width: 120vw;
+	height: 120vh;
+      top: -100px;
+	  left: -100px;
+	z-index:-11;
+
+
+}
+
+#videoid{
+position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+	z-index:-11;
+	opacity: 0;
+}
+
+
+
+
+ @media (min-aspect-ratio: 16/9) {
+     #videoid { height: 300%; top: -100%; }
+ }
+ @media (max-aspect-ratio: 16/9) {
+     #videoid { width: 300%; left: -100%; }
+ }
+
+ @supports (object-fit: cover) {
+     #videoid {
+         top: 0; left: 0;
+         width: 100%; height: 100%;
+         object-fit: cover;
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+.time{
+		  -webkit-transform: translate(-50%, -5%);
+  -moz-transform: translate(-50%, -5%);
+  -ms-transform: translate(-50%, -5%);
+  -o-transform: translate(-50%, -5%);
+  transform: translate(-50%, -5%);
+z-index:-1;
+	position:absolute;
+	color: #fff;
+      bottom: 20px;
+	left:50%;
+    font: 300 14px/18px Roboto;
+     text-align: center;
+	 opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ body{
+	margin: 0;
+	padding: 0;
+	font: 300 14px/18px Roboto;
+
+
+ }
+  
+
+ *,
+:after,
+:before {
+
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: '';
+  display: table
+}
+
+.clearfix:after {
+  clear: both;
+  display: block
+}
+ul{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+a, a:hover, a.active, a:active, a:visited, a:focus{
+	color:#767676;
+	text-decoration:none;
+}
+.content{
+	opacity: 0.9;
+		z-index:-9;
+}
+
+.exo-menu{
+		opacity: 0;
+	    position: absolute;
+		left:0;
+		bottom:-1px;
+	width: 100%;
+	float: left;
+	list-style: none;
+	background: #23364B;
+	z-index:-9;
+}
+.exo-menu > li {	display: inline-block;float:left;}
+.exo-menu > li > a{
+	color: #ccc;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-right: 1px #365670 dotted;
+	-webkit-transition: color 0.2s linear, background 0.2s linear;
+	-moz-transition: color 0.2s linear, background 0.2s linear;
+	-o-transition: color 0.2s linear, background 0.2s linear;
+	transition: color 0.2s linear, background 0.2s linear;
+		z-index:-8;
+}
+.exo-menu > li > a.active,
+.exo-menu > li > a:hover,
+li.drop-down ul > li > a:hover{
+	background:#3f5f82;
+	color:#fff;
+}
+.exo-menu i {
+  float: left;
+  font-size: 18px;
+  margin-right: 6px;
+  line-height: 20px !important;
+}
+
+
+
+/*hover*/
+.Blog:hover,
+.Images:hover,
+.mega-menu:hover,
+.drop-down-ul:hover,
+li.flyout-left>ul:hover,
+li.flyout-right>ul:hover,
+.flyout-mega-wrap:hover,
+li.flyout-left a:hover +ul,
+li.flyout-right a:hover +ul,
+.blog-drop-down >a:hover+.Blog,
+li.drop-down>a:hover +.drop-down-ul,
+.images-drop-down>a:hover +.Images,
+.mega-drop-down a:hover+.mega-menu,
+li.flyout-mega>a:hover +.flyout-mega-wrap{
+	display:block;
+}
+/*responsive*/
+ @media (min-width:768px){
+	.exo-menu > li > a{
+	display:block;
+	padding: 20px 22px;
+ }
+
+.mega-menu, .flyout-mega-wrap, .Images, .Blog,.flyout-right>ul,
+
+
